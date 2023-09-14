@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 	std::cin >> a;
 	std::cin >> b;
 	int c = a + b;
-	std::cout << a << " + " << b << " = " << c << std::endl;
+	std::cout << c << std::endl;
 
 	return EXIT_SUCCESS;
 }

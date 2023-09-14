@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char* argv[])
+int main()
 {
 	int n = 0;
 	int m = 0;
@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 	std::cin >> n;
 	std::cin >> m;
 	s = (m * n) % 109;
-	std::cout << " speed = " << n << "," << " time = " << m << "," << " km = " << s << std::endl;
+	std::cout << s << std::endl;
 
 	return EXIT_SUCCESS;
 }
