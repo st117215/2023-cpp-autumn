@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
 	int s = 0;
 	std::cin >> n;
 	s = (1 + n) / 2 * n;
-	std::cout << "summ from 1 to " << n << " = " << s << std::endl;
+	std::cout  << s << std::endl;
 
 	return EXIT_SUCCESS;
 }

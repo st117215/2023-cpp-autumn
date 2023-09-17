@@ -7,8 +7,7 @@ int main(int argc, char* argv[])
 	int s = 0;
 	std::cin >> a;
 	std::cin >> b;
-	s = (a * (a / b) + b * (b / a)) / ((a / b) + (b / a));
-	std::cout << s << std::endl;
+	std::cout << (a * (a / b) + b * (b / a)) / ((a / b) + (b / a)) << std::endl;
 
 	return EXIT_SUCCESS;
 
