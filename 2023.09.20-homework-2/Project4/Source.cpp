@@ -16,27 +16,25 @@ int main(int argc, char* argv[])
 	int k20 = 0;
 	int k60 = 0;
 	std::cin >> n;
-	while (n > 0) {
-		if (n / b60 > 0) {
-			k60++;
-			n %= b60;
-		}
-		else if (n / b20 > 0) {
-			k20++;
-			n %= b20;
-		}
-		else if (n / b10 > 0) {
-			k10++;
-			n %= b10;
-		}
-		else if (n / b5 > 0) {
-			k5++;
-			n %= b5;
-		}
-		else if (n / b1 > 0) {
-			k1++;
-			n -= b1;
-		}
+	if (n / b60 > 0){
+		k60 = n / b60;
+		n = n % b60;
+	}
+	if (n / b20 > 0) {
+		k20 = n / b20;
+		n = n % b20;
+	}
+	if (n / b10 > 0) {
+		k10 = n / b10;
+		n = n % b10;
+	}
+	if (n / b5 > 0) {
+		k5 = n / b5;
+		n = n % b5;
+	}
+	if (n / b1 > 0) {
+		k1 = n / b1;
+		n = n % b1;
 	}
 	std::cout << k1 << ' ' << k5 << ' ' << k10 << ' ' << k20 << ' ' << k60 << ' ' << std::endl;
 	return EXIT_SUCCESS;
