@@ -14,7 +14,7 @@ int main()
 		}
 		else if (a - 1 >= b) {
 			a = a - 1;
-			std::cout << "-1" << std::endl ;
+			std::cout << "-1" << std::endl;
 		}
 	}
 	std::cout << a << std::endl;
