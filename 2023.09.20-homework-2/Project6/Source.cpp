@@ -323,7 +323,7 @@ int main(int argc, char* argv[])
 			std::cout << "XCVIII" << std::endl;
 		}
 		if (a == 9) {
-			std::cout << "XCIX" << std::endl;
+			std::cout << "XCIX" << std::endl ;
 		}
 	}
 	if (x == 100) {
