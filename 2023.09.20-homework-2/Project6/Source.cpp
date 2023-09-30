@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 	int b = 0;
 	std::cin >> x;
 	a = x % 10;
-	b = (x / 10) % 10 ;
+	b = (x / 10) % 10;
 	if (b == 0) {
 		if (a == 1) {
 			std::cout << "I" << std::endl;
