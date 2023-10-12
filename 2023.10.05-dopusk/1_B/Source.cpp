@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	int y[32]{ 0 };
 	int z[32]{ 0 };
 	int w[32]{ 0 };
-	for (int i = 0; i < 32; ++i)
+	for (int i = 0; i < 32; ++i) 
 	{
 		x[i] = (n >> (31 - i) & 1);
 		y[i] = (g >> (31 - i) & 1);

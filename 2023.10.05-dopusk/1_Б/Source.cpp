@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 	int z = 0;
 	if (a / 2 == n) {
 		for (int i = 0; i < k; i++) {
-			std::cout << (n >> (k - 1 - i) & 1);
+			std::cout << (n >> (k - 1 - i) & 1); 
 		}
 	}
 	else {

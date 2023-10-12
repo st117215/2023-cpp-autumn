@@ -6,4 +6,4 @@
 * ...>git rm *.jpg
 * ...>git commit --all --message "notes on matan removed"
 * ...>git push
-*/
+*/ 

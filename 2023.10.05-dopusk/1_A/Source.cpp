@@ -14,4 +14,4 @@ int main(int argc, char* argv[])
 	std::cout << k;
 
 	return 0;
-}
+} 
