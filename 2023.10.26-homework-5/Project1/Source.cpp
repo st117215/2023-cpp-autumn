@@ -62,7 +62,15 @@ int main(int argc, char* argv[])
 			}
 			else if (choice == 7) {
 				int* c = extractAllDuplicates(a, n);
-				printArray(c, sizeOfArray(a, n));
+				printArray(c, n);
+				break;
+			}
+			else if (choice == 8) {
+				int j = 0;
+				std::cout << "Vvedite N :";
+				std::cin >> j;
+				int* c = N_elementsToarray(a, n,j);
+				printArray(a, n);
 				break;
 			}
 			else {

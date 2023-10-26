@@ -13,6 +13,7 @@ void printReverseArray(int*& a, int& len);
 void changeArrayMnMx(int*& a, int& len);
 int* extractAllDuplicates(int*& a, int& len);
 int sizeOfArray(int*& a, int& len);
+int* N_elementsToarray(int*& a, int& len, int& j);
 
 
 

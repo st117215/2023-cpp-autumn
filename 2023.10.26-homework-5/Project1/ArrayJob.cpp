@@ -13,6 +13,7 @@ void printMenu()
 	std::cout << "5 - Turn around array" << std::endl;
 	std::cout << "6 - Swap the maximum and minimum elements of the array" << std::endl;
 	std::cout << "7 - Remove all duplicates from the array" << std::endl;
+	std::cout << "8 - Dobavit' v massiv N raznih elementov (N vvoditsia s klaviaturi)." << std::endl;
 }
 int* initArray(int len)
 {
@@ -22,7 +23,7 @@ int* initArray(int len)
 	int max = 99;
 	for (int i = 0; i < len - 1; ++i)
 	{
-		res[i] = rand() % (max - min + 1) + min;;
+		res[i] = rand() % (max - min + 1) + min;
 	}
 	return res;
 }
@@ -196,6 +197,7 @@ int* extractAllDuplicates(int*& a, int& len) {
 				}
 			}
 		}
+		len = t;
 		return c;
 	}
 }
@@ -235,5 +237,52 @@ int sizeOfArray(int*& a, int& len) {
 			}
 		}
 		return t;
+	}
+}
+int* N_elementsToarray(int*& a, int& len, int& j) {
+	if (a == nullptr)
+	{
+		std::cout << "EMPTY";
+	}
+	else
+	{
+		int* u = new int[j] {0};
+		srand(time(0));
+		int* res = new int[len] { 0 };
+		int min = -99;
+		int max = 99;
+		for (int i = 0; i < len; i++) {
+			std::cout << a[i] << ' ';
+		}
+		std::cout << std::endl;
+		for (int i = 0; i < j; i++){
+			u[i] = rand() % (max - min + 1) + min;;
+		}
+		for (int i = 0; i < j; i++) {
+			std::cout << u[i] << ' ';
+		}
+		std::cout << std::endl;
+		int* newA = new int[len + j ] { 0 };
+		for (int i = 0; i < len + j ; ++i){
+			newA[i] = a[i];
+		}
+		delete[] a;
+		a = newA;
+
+		for (int i = 0; i < len + j ; i++) {
+			std::cout << a[i] << ' ';
+		}
+		std::cout << std::endl;
+		int k = 0;
+		for (int i = len; i < len + j ; i++) {
+			a[i] = u[k];
+			k++;
+		}
+		for (int i = 0; i < len + j ; i++) {
+			std::cout << a[i] << ' ';
+		}
+		std::cout << std::endl;
+		len += j;
+		return a;
 	}
 }
