@@ -22,7 +22,7 @@ void CountWords(char* filename, int& k)
 	fclose(file);
 } 
 int main(int argc, char* argv[])
-{
+{ 
 	int a = 0;
 	char c[233] = "in.txt";
 	CountWords(c, a);
