@@ -1,0 +1,37 @@
+int main(int argc, char* argv[])
+{
+	string myText;
+	// Чтение из текстового файла
+	ifstream MyReadFile("filename.txt");
+	// Использование цикла while  совместно с функцией getline()  для построчного чтения файла
+	while (std::getline(MyReadFile, myText)) {
+		// вывод текста из файла
+		cout << myText;
+	}
+
+	std::ifstream fin("in2.txt");
+	fin.close();
+	int k = 0;
+	fin.open("in2.txt");
+	while (!fin.eof())
+	{
+		char x = 0;
+		fin >> x;
+		if (x != '\0') {
+			k++;
+		}
+	}
+	for (int i = 0; i < k / 2;i++) {
+		if (fin[i] != fin[k - 1 - i])
+			std::cout << 'NET';
+		else {
+			std::cout << 'DA'
+		}
+	}
+	std::cout << k << std::endl;
+
+	return EXIT_SUCCESS;
+}
+
+using namespace std::basic_istream;
+using namespace std::basic_istream;
