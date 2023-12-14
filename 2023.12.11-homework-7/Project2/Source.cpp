@@ -3,7 +3,7 @@
 
 void CountWords(char* filename, int& k)
 {
-	FILE* file = fopen(filename, "r");
+	FILE* file = fopen(filename, "r"); 
 	while (!feof(file))
 	{
 		char c = 0;
