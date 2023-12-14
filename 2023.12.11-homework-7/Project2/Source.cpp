@@ -20,7 +20,7 @@ void CountWords(char* filename, int& k)
 	FILE* f = fopen("out.txt", "w");
 	fprintf(f, "%d", k);
 	fclose(file);
-}
+} 
 int main(int argc, char* argv[])
 {
 	int a = 0;
